@@ -1,0 +1,57 @@
+/* Company Logos CSS for SHELLS, SmartFinder, ArtVenue, WAVES */
+.company-logos-simple {
+    display: flex;
+    gap: 48px;
+    align-items: center;
+    background: #f8fafc;
+    padding: 16px 0;
+    border-radius: 8px;
+    justify-content: center;
+}
+.logo-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    min-width: 100px;
+}
+.logo-item span {
+    font-size: 1rem;
+    color: #b6c1d2;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+.shells-icon {
+    width: 32px;
+    height: 32px;
+    background: url('../images/shells-logo.png') no-repeat center;
+    position: relative;
+    box-sizing: border-box;
+}
+.smartfinder-icon {
+    width: 32px;
+    height: 32px;
+    position: relative;
+    box-sizing: border-box;
+    background: url('../images/smartfinder-logo.png') no-repeat center;
+}
+.artvenue-icon {
+    width: 32px;
+    height: 32px;
+    position: relative;
+    box-sizing: border-box;
+    background: url('../images/artvenue-logo.png') no-repeat center;
+}
+.waves-icon {
+    width: 32px;
+    height: 32px;
+    position: relative;
+    box-sizing: border-box;
+    background: url('../images/waves-logo.png') no-repeat center;
+}
+
+.logo-inline {
+    flex-direction: row !important;
+    gap: 12px !important;
+    align-items: center !important;
+}
