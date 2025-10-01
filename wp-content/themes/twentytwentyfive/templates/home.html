@@ -340,86 +340,27 @@
 </section>
 
 <!-- Problems Solved Banner Section -->
-<section class="problems-banner">
-	<div class="banner-container">
-		<!-- Left Visual Section -->
-		<div class="banner-visual">
-			<div class="balloon-image">
-				<svg viewBox="0 0 400 600" width="100%" height="100%" class="balloon-svg">
-					<!-- Sky background -->
-					<defs>
-						<linearGradient id="skyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-							<stop offset="0%" style="stop-color:#e0e7ff;stop-opacity:1" />
-							<stop offset="100%" style="stop-color:#c7d2fe;stop-opacity:1" />
-						</linearGradient>
-						<linearGradient id="purpleOverlay" x1="0%" y1="0%" x2="100%" y2="100%">
-							<stop offset="0%" style="stop-color:#6A2C9F;stop-opacity:0.8" />
-							<stop offset="100%" style="stop-color:#8B5CF6;stop-opacity:0.6" />
-						</linearGradient>
-					</defs>
-					
-					<!-- Sky background -->
-					<rect width="400" height="600" fill="url(#skyGradient)"/>
-					
-					<!-- Mountains/hills in background -->
-					<path d="M0,400 Q100,350 200,380 T400,360 L400,600 L0,600 Z" fill="#a78bfa" opacity="0.3"/>
-					<path d="M0,450 Q150,400 300,420 T400,400 L400,600 L0,600 Z" fill="#8b5cf6" opacity="0.2"/>
-					
-					<!-- Hot air balloons -->
-					<!-- Balloon 1 -->
-					<ellipse cx="100" cy="200" rx="40" ry="60" fill="#fbbf24" opacity="0.8"/>
-					<ellipse cx="100" cy="200" rx="35" ry="55" fill="#f59e0b" opacity="0.9"/>
-					<rect x="95" y="260" width="10" height="80" fill="#6b7280" opacity="0.7"/>
-					<rect x="85" y="340" width="30" height="20" rx="5" fill="#374151" opacity="0.8"/>
-					
-					<!-- Balloon 2 -->
-					<ellipse cx="250" cy="150" rx="35" ry="50" fill="#ec4899" opacity="0.8"/>
-					<ellipse cx="250" cy="150" rx="30" ry="45" fill="#db2777" opacity="0.9"/>
-					<rect x="245" y="200" width="10" height="70" fill="#6b7280" opacity="0.7"/>
-					<rect x="235" y="270" width="30" height="20" rx="5" fill="#374151" opacity="0.8"/>
-					
-					<!-- Balloon 3 -->
-					<ellipse cx="180" cy="300" rx="30" ry="45" fill="#10b981" opacity="0.8"/>
-					<ellipse cx="180" cy="300" rx="25" ry="40" fill="#059669" opacity="0.9"/>
-					<rect x="175" y="345" width="10" height="60" fill="#6b7280" opacity="0.7"/>
-					<rect x="165" y="405" width="30" height="20" rx="5" fill="#374151" opacity="0.8"/>
-					
-					<!-- Balloon 4 -->
-					<ellipse cx="320" cy="250" rx="25" ry="35" fill="#8b5cf6" opacity="0.8"/>
-					<ellipse cx="320" cy="250" rx="20" ry="30" fill="#7c3aed" opacity="0.9"/>
-					<rect x="315" y="285" width="10" height="50" fill="#6b7280" opacity="0.7"/>
-					<rect x="305" y="335" width="30" height="20" rx="5" fill="#374151" opacity="0.8"/>
-					
-					<!-- Balloon 5 (smaller, distant) -->
-					<ellipse cx="50" cy="350" rx="20" ry="30" fill="#f97316" opacity="0.7"/>
-					<ellipse cx="50" cy="350" rx="15" ry="25" fill="#ea580c" opacity="0.8"/>
-					<rect x="47" y="380" width="6" height="40" fill="#6b7280" opacity="0.6"/>
-					<rect x="40" y="420" width="20" height="15" rx="3" fill="#374151" opacity="0.7"/>
-					
-					<!-- Balloon 6 (smaller, distant) -->
-					<ellipse cx="350" cy="400" rx="18" ry="25" fill="#06b6d4" opacity="0.7"/>
-					<ellipse cx="350" cy="400" rx="13" ry="20" fill="#0891b2" opacity="0.8"/>
-					<rect x="347" y="425" width="6" height="35" fill="#6b7280" opacity="0.6"/>
-					<rect x="340" y="460" width="20" height="15" rx="3" fill="#374151" opacity="0.7"/>
-					
-					<!-- Purple overlay -->
-					<rect width="400" height="600" fill="url(#purpleOverlay)"/>
-				</svg>
-			</div>
-		</div>
-		
-		<!-- Right Content Section -->
-		<div class="banner-content">
-			<h2 class="banner-title">Problems come and<br>get solved with ease</h2>
-			<p class="banner-description">Egestas fringilla aliquam leo, habitasse arcu varius lorem elit. Neque pellentesque donec et tellus ac varius tortor, bibendum. Nulla felis ac turpis at amet. Purus malesuada placerat arcu at enim elit in accumsan.</p>
-			<a href="#" class="banner-cta">
-				<span>Improve workflow</span>
-				<svg class="cta-arrow" viewBox="0 0 24 24" width="16" height="16">
-					<path d="M5 12h14m-7-7l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2"/>
-				</svg>
-			</a>
-		</div>
-	</div>
+<section class="banner-container">
+    <!-- LEFT: the framed crop (transparent so the section background shows through) -->
+    <div class="banner-visual" aria-hidden="true"></div>
+
+    <!-- RIGHT: content -->
+    <div class="banner-content">
+
+      <h2 class="banner-title">Problems come and<br>get solved with ease</h2>
+      <p class="banner-description">
+        Egestas fringilla aliquam leo, habitasse arcu varius lorem elit. Neque pellentesque donec et tellus ac
+        varius tortor, bibendum. Nulla felis ac turpis at amet. Purus malesuada placerat arcu at enim elit
+        in accumsan.
+      </p>
+
+      <a href="#" class="banner-cta">
+        <span>Improve workflow</span>
+        <svg class="cta-arrow" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+          <path d="M5 12h14m-7-7l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2"/>
+        </svg>
+      </a>
+    </div>
 </section>
 
 <!-- Improve Workflow Section -->
@@ -481,54 +422,11 @@
 				</div>
 				<div class="browser-content">
 					<div class="video-content">
-						<div class="team-collaboration">
-							<svg viewBox="0 0 400 300" width="100%" height="100%">
-								<!-- Background -->
-								<rect width="400" height="300" fill="#f8fafc"/>
-								
-								<!-- Table -->
-								<rect x="50" y="180" width="300" height="80" fill="#8b4513" rx="4"/>
-								<rect x="60" y="190" width="280" height="60" fill="#a0522d" rx="2"/>
-								
-								<!-- Woman 1 (left) - looking at documents -->
-								<circle cx="120" cy="140" r="25" fill="#fbb6ce"/>
-								<rect x="100" y="165" width="40" height="60" fill="#3b82f6" rx="20"/>
-								<rect x="110" y="225" width="20" height="30" fill="#1e40af" rx="10"/>
-								
-								<!-- Woman 2 (right) - writing -->
-								<circle cx="280" cy="150" r="25" fill="#fbb6ce"/>
-								<rect x="260" y="175" width="40" height="60" fill="#ffffff" rx="20"/>
-								<rect x="270" y="235" width="20" height="30" fill="#64748b" rx="10"/>
-								
-								<!-- Person 3 (background) - standing -->
-								<circle cx="200" cy="100" r="20" fill="#fbb6ce"/>
-								<rect x="185" y="120" width="30" height="50" fill="#ec4899" rx="15"/>
-								<rect x="190" y="170" width="20" height="40" fill="#be185d" rx="10"/>
-								
-								<!-- Documents on table -->
-								<rect x="80" y="200" width="60" height="40" fill="#ffffff" rx="2"/>
-								<rect x="85" y="205" width="50" height="2" fill="#e5e7eb"/>
-								<rect x="85" y="210" width="40" height="2" fill="#e5e7eb"/>
-								<rect x="85" y="215" width="45" height="2" fill="#e5e7eb"/>
-								
-								<rect x="150" y="200" width="50" height="35" fill="#ffffff" rx="2"/>
-								<rect x="155" y="205" width="40" height="2" fill="#e5e7eb"/>
-								<rect x="155" y="210" width="35" height="2" fill="#e5e7eb"/>
-								
-								<rect x="220" y="200" width="55" height="40" fill="#ffffff" rx="2"/>
-								<rect x="225" y="205" width="45" height="2" fill="#e5e7eb"/>
-								<rect x="225" y="210" width="40" height="2" fill="#e5e7eb"/>
-								
-								<!-- Pen -->
-								<rect x="270" y="195" width="3" height="15" fill="#1f2937"/>
-								<rect x="268" y="190" width="7" height="5" fill="#3b82f6"/>
-							</svg>
-						</div>
 						<div class="play-button">
-							<svg viewBox="0 0 24 24" width="60" height="60">
-								<circle cx="12" cy="12" r="10" fill="rgba(255,255,255,0.9)" stroke="rgba(255,255,255,0.5)" stroke-width="2"/>
-								<polygon points="10,8 16,12 10,16" fill="currentColor"/>
-							</svg>
+							<svg viewBox="0 0 24 24" width="144" height="144">
+								<circle cx="12" cy="12" r="10" fill="rgba(18, 21, 25, 0.45)" />
+								<path d="M10 10V14C10 15 11.2 15.5 12 15L16 12.5C16.8 12 16.8 11 16 10.5L12 8C11.2 7.5 10 8 10 9Z" stroke="rgba(255,255,255,0.7)" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>				
 						</div>
 					</div>
 				</div>
@@ -737,7 +635,7 @@
 
 .browser-content {
 	position: relative;
-	height: 400px;
+	height: 365px;
 	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 	display: flex;
 	align-items: center;
@@ -1274,125 +1172,134 @@
 }
 
 /* Problems Banner Section */
-.problems-banner {
-	padding: 120px 0;
-	background: #6A2C9F;
+:root{
+    --overlay-pink: rgba(88, 28, 135, 0.75);
+    --accent-cyan: #39d6ff;
+    --content-border: rgba(255,255,255,0.12);
+}
+	
+.banner-container {
+	background-image: url('assets/images/balloon.jpg');
+	position: relative;	
+	background-size: cover;
+	background-position: center left;
 	border-radius: 24px;
-	margin: 60px 24px;
-	overflow: hidden;
-	position: relative;
+	align-items: center;
+	max-width: 1200px;
+	padding: 120px 24px;
+	gap: 60px;
+	z-index: 2;
+	display: grid;
+	margin: 0 auto;
+	grid-template-columns: 1fr 1fr;
 }
 
-.banner-container {
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 0 24px;
-	display: grid;
-	grid-template-columns: 2fr 1fr;
-	gap: 60px;
-	align-items: center;
-	position: relative;
-	z-index: 2;
+.banner-container::before{
+	content: "";
+    inset: 0;
+    z-index: 0;
+    position: absolute;
+	border-radius: 24px;
+    pointer-events: none;
+    background: var(--overlay-pink);
 }
 
 .banner-visual {
-	position: relative;
-	height: 500px;
+	flex: 0 0 52%;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-start;
 }
 
-.balloon-image {
-	width: 100%;
-	height: 100%;
-	position: relative;
-	transform: rotate(90deg);
-	transform-origin: center;
-}
-
-.balloon-svg {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
-
+/* Right content column */
 .banner-content {
-	color: #ffffff;
-	text-align: right;
-	padding-left: 40px;
+	flex: 0 0 48%;
+	max-width: 520px;
+	padding: 12px 18px;
+	box-sizing: border-box;
+	position: relative;
 }
 
-.banner-title {
-	font-size: 3.5rem;
-	font-weight: 800;
-	line-height: 1.1;
-	color: #ffffff;
-	margin: 0 0 24px 0;
-	letter-spacing: -0.02em;
+.banner-title{
+	font-size: 48px;
+	line-height: 1.35;
+	font-weight: bold;
+	margin: 0 0 18px 0;
+	color: #fff;
+	text-shadow: 0 4px 18px rgba(0,0,0,0.35);
 }
 
-.banner-description {
-	font-size: 1.125rem;
-	line-height: 1.7;
-	color: rgba(255, 255, 255, 0.9);
-	margin: 0 0 32px 0;
-	max-width: 500px;
-	margin-left: auto;
+.banner-description{
+	margin: 0 0 26px 0;
+	color: rgba(255,255,255,0.95);
+	line-height: 1.6;
+	font-size: 17px;
 }
 
-.banner-cta {
+.banner-cta{
 	display: inline-flex;
 	align-items: center;
-	gap: 8px;
-	color: #ffffff;
-	text-decoration: none;
+	gap: 10px;
+	color: #fff;
 	font-weight: 600;
-	font-size: 1rem;
-	transition: all 0.2s;
-	padding: 12px 24px;
-	border: 2px solid rgba(255, 255, 255, 0.3);
-	border-radius: 8px;
-	background: rgba(255, 255, 255, 0.1);
-	backdrop-filter: blur(10px);
+	text-decoration: none;
+	border-bottom: 2px solid rgba(255,255,255,0.06);
+	padding-bottom: 6px;
+	transition: transform .18s ease, opacity .18s ease;
 }
 
-.banner-cta:hover {
-	background: rgba(255, 255, 255, 0.2);
-	border-color: rgba(255, 255, 255, 0.5);
-	transform: translateY(-2px);
+.banner-cta svg { transform-origin: center; transition: transform .18s ease; }
+
+.banner-cta:hover { transform: translateX(4px); opacity: .98; }
+.banner-cta:hover svg { transform: translateX(4px); }
+
+/* Responsive tweaks */
+@media (max-width: 1000px){
+	.banner-title{ font-size: 36px; }
 }
 
-.banner-cta .cta-arrow {
-	transition: transform 0.2s;
-}
-
-.banner-cta:hover .cta-arrow {
-	transform: translateX(4px);
-}
-
-@media (max-width: 768px) {
-	.problems-banner {
-		padding: 80px 0;
-		margin: 40px 16px;
-		border-radius: 16px;
+@media (max-width: 720px){
+	.banner-container { 
+		flex-direction: column; 
+		/* gap: 20px;  */
+		padding: 0; 
+		text-align: center;
+		border-radius: 0; 
 	}
 	
+	.banner-container::before{
+		border-radius: 0;
+	}
+	
+	.banner-title{ font-size: 28px; }
+
+	.banner-visual {
+		display: none;
+	}
+}
+
+@media (max-width: 768px) {	
 	.banner-container {
+		border-radius: 0;
 		grid-template-columns: 1fr;
 		gap: 40px;
 		padding: 0 20px;
 	}
 	
+	.banner-container::before{
+		border-radius: 0;
+	}
+
 	.banner-visual {
-		height: 300px;
-		order: 2;
+		display: none;
 	}
 	
 	.banner-content {
 		text-align: center;
 		padding-left: 0;
 		order: 1;
+		margin: auto;
+		padding: 24px;
 	}
 	
 	.banner-title {
@@ -1574,15 +1481,6 @@
 	gap: 8px;
 }
 
-.browser-content {
-	position: relative;
-	height: 400px;
-	background: #f8fafc;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
 .video-content {
 	width: 100%;
 	height: 100%;
@@ -1590,6 +1488,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background: url('assets/images/Video.jpg') center/cover;
 }
 
 .team-collaboration {
@@ -1714,7 +1613,7 @@
 /* Community CTA Section */
 .community-cta-section {
 	padding: 80px 24px;
-	background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+	background: linear-gradient(to right, #312E81 0%, #1E40AF 0%, #1E3A8A 47%, #701A75 100%);
 	border-radius: 16px;
 	max-width: 1200px;
 	margin: 60px auto;
@@ -1731,7 +1630,7 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: linear-gradient(135deg, rgba(37, 99, 235, 0.9) 0%, rgba(124, 58, 237, 0.9) 100%);
+	background: linear-gradient(to right, #312E81 0%, #1E40AF 0%, #1E3A8A 47%, #701A75 100%);
 	z-index: 1;
 }
 
@@ -1765,10 +1664,10 @@
 	display: inline-flex;
 	align-items: center;
 	gap: 8px;
-	background: #ffffff;
-	color: #2563eb;
-	padding: 16px 32px;
-	border-radius: 12px;
+	background: #2563eb;
+	color: #ffffff;
+	padding: 16px 42px;
+	border-radius: 10px;
 	text-decoration: none;
 	font-weight: 700;
 	font-size: 1rem;
