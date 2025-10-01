@@ -25,50 +25,6 @@
 			</div>
 			
 			<!-- Company Logos -->
-			<div class="company-logos">
-				<div class="logo-item">
-					<div class="logo-icon shells">
-						<svg viewBox="0 0 24 24" width="32" height="32">
-							<circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/>
-							<circle cx="12" cy="12" r="6" fill="none" stroke="currentColor" stroke-width="2"/>
-							<circle cx="12" cy="12" r="2" fill="currentColor"/>
-						</svg>
-					</div>
-					<span>SHELLS</span>
-				</div>
-				<div class="logo-item">
-					<div class="logo-icon smartfinder">
-						<svg viewBox="0 0 24 24" width="32" height="32">
-							<path d="M12 2L2 7l10 5 10-5-10-5z" fill="currentColor"/>
-							<path d="M2 17l10 5 10-5" fill="none" stroke="currentColor" stroke-width="2"/>
-							<path d="M2 12l10 5 10-5" fill="none" stroke="currentColor" stroke-width="2"/>
-						</svg>
-					</div>
-					<span>SmartFinder</span>
-				</div>
-				<div class="logo-item">
-					<div class="logo-icon artvenue">
-						<svg viewBox="0 0 24 24" width="32" height="32">
-							<path d="M3 12c0-1.657 1.343-3 3-3s3 1.343 3 3-1.343 3-3 3-3-1.343-3-3z" fill="currentColor"/>
-							<path d="M9 12c0-1.657 1.343-3 3-3s3 1.343 3 3-1.343 3-3 3-3-1.343-3-3z" fill="currentColor"/>
-							<path d="M15 12c0-1.657 1.343-3 3-3s3 1.343 3 3-1.343 3-3 3-3-1.343-3-3z" fill="currentColor"/>
-						</svg>
-					</div>
-					<span>ArtVenue</span>
-				</div>
-				<div class="logo-item">
-					<div class="logo-icon waves">
-						<svg viewBox="0 0 24 24" width="32" height="32">
-							<rect x="2" y="8" width="3" height="8" fill="currentColor"/>
-							<rect x="6" y="4" width="3" height="16" fill="currentColor"/>
-							<rect x="10" y="6" width="3" height="12" fill="currentColor"/>
-							<rect x="14" y="2" width="3" height="20" fill="currentColor"/>
-							<rect x="18" y="5" width="3" height="14" fill="currentColor"/>
-						</svg>
-					</div>
-					<span>WAVES</span>
-				</div>
-			</div>
 		</div>
 		
 		<!-- Right Visual Section -->
@@ -83,24 +39,18 @@
 					</div>
 					<div class="browser-url">
 						<span>app.magnifi.co</span>
-						<div class="browser-nav">
-							<svg viewBox="0 0 24 24" width="16" height="16">
-								<path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" stroke-width="2"/>
-							</svg>
-							<svg viewBox="0 0 24 24" width="16" height="16">
-								<path d="M9 18l6-6-6-6" fill="none" stroke="currentColor" stroke-width="2"/>
-							</svg>
-						</div>
+					</div>
+					<div class="browser-nav">
+						<svg viewBox="0 0 24 24" width="16" height="16">
+							<path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" stroke-width="2"/>
+						</svg>
+						<svg viewBox="0 0 24 24" width="16" height="16">
+							<path d="M9 18l6-6-6-6" fill="none" stroke="currentColor" stroke-width="2"/>
+						</svg>
 					</div>
 				</div>
 				<div class="browser-content">
 					<div class="team-photo">
-						<div class="play-button">
-							<svg viewBox="0 0 24 24" width="60" height="60">
-								<circle cx="12" cy="12" r="10" fill="rgba(255,255,255,0.9)" stroke="rgba(255,255,255,0.5)" stroke-width="2"/>
-								<polygon points="10,8 16,12 10,16" fill="currentColor"/>
-							</svg>
-						</div>
 					</div>
 				</div>
 			</div>
@@ -616,51 +566,56 @@
 	display: flex;
 	align-items: center;
 	padding: 0;
-	margin: 0;
+	margin-top: -150px;
 }
 
 .hero-container {
-	max-width: 1200px;
+	width: 1280px;
+	height: 600px;
 	margin: 0 auto;
-	padding: 0 24px;
+	padding: 0 80px;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	gap: 60px;
+	gap: 80px;
 	align-items: center;
 }
 
 .hero-content {
-	padding-right: 40px;
+	height: 440px;
 }
 
 .hero-title {
-	font-size: 3.5rem;
+	font-size: 72px;
 	font-weight: 800;
-	line-height: 1.1;
+	line-height: 1.1000000000000000001;
+	word-spacing: 5px;
 	color: #0f172a;
 	margin: 0 0 24px 0;
 	letter-spacing: -0.02em;
 }
 
 .hero-description {
-	font-size: 1.25rem;
+	font-weight: 400;
+	font-size: 18px;
 	line-height: 1.6;
-	color: #64748b;
-	margin: 0 0 40px 0;
+	color: #475569;
+	margin: 0 0 20px 0;
 	max-width: 480px;
 }
 
 .signup-form {
 	display: flex;
-	gap: 12px;
-	margin-bottom: 60px;
+	gap: 16px;
+	margin-bottom: 20px;
+	height: 48px;
 	align-items: center;
 }
 
 .email-input-wrapper {
 	position: relative;
 	flex: 1;
-	max-width: 320px;
+	max-width: 408px;
+	height: 48px;
 }
 
 .email-icon {
@@ -673,7 +628,7 @@
 }
 
 .email-input {
-	width: 100%;
+	width: 85%;
 	padding: 16px 16px 16px 48px;
 	border: 1px solid #e2e8f0;
 	border-radius: 12px;
@@ -699,6 +654,8 @@
 	padding: 16px 24px;
 	font-size: 1rem;
 	font-weight: 600;
+	height: 48px;
+	width: 176px;
 	cursor: pointer;
 	transition: background-color 0.2s;
 	white-space: nowrap;
@@ -743,6 +700,7 @@
 
 .hero-visual {
 	position: relative;
+	height: 440px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -755,15 +713,6 @@
 	overflow: hidden;
 	width: 100%;
 	max-width: 600px;
-}
-
-.browser-header {
-	background: #f8fafc;
-	padding: 16px 20px;
-	display: flex;
-	align-items: center;
-	gap: 16px;
-	border-bottom: 1px solid #e2e8f0;
 }
 
 .browser-controls {
@@ -780,19 +729,6 @@
 .control.red { background: #ef4444; }
 .control.yellow { background: #f59e0b; }
 .control.green { background: #10b981; }
-
-.browser-url {
-	flex: 1;
-	background: #ffffff;
-	border: 1px solid #e2e8f0;
-	border-radius: 8px;
-	padding: 8px 16px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	font-size: 0.875rem;
-	color: #64748b;
-}
 
 .browser-nav {
 	display: flex;
@@ -811,7 +747,7 @@
 .team-photo {
 	width: 100%;
 	height: 100%;
-	background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300"><rect width="400" height="300" fill="%23f1f5f9"/><circle cx="100" cy="150" r="30" fill="%23e2e8f0"/><circle cx="200" cy="120" r="25" fill="%23cbd5e1"/><circle cx="300" cy="140" r="28" fill="%23d1d5db"/><circle cx="150" cy="200" r="26" fill="%23e5e7eb"/><circle cx="250" cy="180" r="24" fill="%23f3f4f6"/></svg>') center/cover;
+	background: url('assets/images/teammembers.jpg') center/cover;
 	position: relative;
 }
 
@@ -1596,7 +1532,7 @@
 	padding: 16px 20px;
 	display: flex;
 	align-items: center;
-	gap: 16px;
+	gap: 90px;
 	border-bottom: 1px solid #e2e8f0;
 }
 
@@ -1616,16 +1552,21 @@
 .control.green { background: #10b981; }
 
 .browser-url {
-	flex: 1;
 	background: #ffffff;
 	border: 1px solid #e2e8f0;
-	border-radius: 8px;
-	padding: 8px 16px;
+	border-radius: 5px;
+	padding: 4px 100px;
 	display: flex;
+	background-color: #F1F5F9;
 	align-items: center;
-	justify-content: space-between;
 	font-size: 0.875rem;
 	color: #64748b;
+	font-size: 12px;
+}
+.browser-url span{
+	line-height: 1.4;
+	font-weight: 400;
+	color: #94A3B8;
 }
 
 .browser-nav {
