@@ -1,9 +1,11 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Header</title>
+    <link rel="stylesheet" href="assets/css/company-logos.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <style>
         :root {
             --nav-text: #0f172a;
@@ -13,7 +15,7 @@
         }
 
         html { font-size: 16px; }
-        body { margin: 0; box-sizing: border-box;}
+        body { margin: 0; box-sizing: border-box; overflow-x: hidden;}
 
         .site-header {
             border-bottom: 1px solid var(--border);
@@ -101,6 +103,44 @@
         }
         .actions .cta .arrow { width: 24px; height: 24px; display: inline-block; }
         .actions .cta .arrow path { fill: #fff; }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 24px;
+        }
+
+        .hamburger div {
+            background-color: black;
+            height: 4px;
+            width: 100%;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        @media (max-width: 1440px) {
+            .site-header .container {
+                margin: auto 24px;
+            }
+        }
+
+        @media (max-width: 1100px) {
+            .main-nav {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .actions {
+                display: none;
+            }
+            .hamburger {
+                display: flex;
+            }
+        }
+        
     </style>
 </head>
 <body>
@@ -163,7 +203,12 @@
                     </span>
                 </a>
             </div>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </div>
     </header>
 </body>
-</html> -->
+</html>
