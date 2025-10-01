@@ -1,1 +1,139 @@
-<!-- wp:pattern {"slug":"twentytwentyfive/footer"} /-->
+<footer class="site-footer">
+	<div class="footer-container">
+		<div class="footer-content">
+			<!-- Left Section - Copyright -->
+			<div class="footer-left">
+				<p class="copyright">
+					<span class="brand">magnifico</span> @ 2023. All rights reserved.
+				</p>
+			</div>
+			
+			<!-- Right Section - Navigation Links -->
+			<div class="footer-right">
+				<nav class="footer-nav">
+					<a href="#" class="footer-link">Terms</a>
+					<a href="#" class="footer-link">Privacy</a>
+					<a href="#" class="footer-link">Support</a>
+					<a href="#" class="footer-link">About</a>
+					<a href="#" class="footer-link">Resources</a>
+					<a href="#" class="footer-link">Contact</a>
+				</nav>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<style>
+.site-footer {
+	background: #ffffff;
+	border-top: 1px solid #e2e8f0;
+	padding: 40px 0;
+	margin-top: 60px;
+}
+
+.footer-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 24px;
+}
+
+.footer-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.footer-left {
+	flex: 1;
+	min-width: 200px;
+}
+
+.copyright {
+	margin: 0;
+	font-size: 0.875rem;
+	color: #64748b;
+	line-height: 1.5;
+}
+
+.brand {
+	font-weight: 700;
+	color: #0f172a;
+}
+
+.footer-right {
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.footer-nav {
+	display: flex;
+	gap: 32px;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.footer-link {
+	color: #64748b;
+	text-decoration: none;
+	font-size: 0.875rem;
+	font-weight: 500;
+	transition: color 0.2s ease;
+	white-space: nowrap;
+}
+
+.footer-link:hover {
+	color: #2563eb;
+}
+
+@media (max-width: 768px) {
+	.site-footer {
+		padding: 32px 0;
+		margin-top: 40px;
+	}
+	
+	.footer-container {
+		padding: 0 20px;
+	}
+	
+	.footer-content {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		gap: 24px;
+	}
+	
+	.footer-left {
+		order: 2;
+		min-width: auto;
+	}
+	
+	.footer-right {
+		order: 1;
+		justify-content: center;
+	}
+	
+	.footer-nav {
+		gap: 24px;
+		justify-content: center;
+	}
+	
+	.footer-link {
+		font-size: 0.8rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.footer-nav {
+		gap: 16px;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	
+	.footer-link {
+		font-size: 0.75rem;
+	}
+}
+</style>

@@ -1,1 +1,143 @@
-<!-- wp:pattern {"slug":"twentytwentyfive/header"} /-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <style>
+        :root {
+            --nav-text: #0f172a;
+            --muted: #64748b;
+            --border: rgba(2, 6, 23, 0.08);
+            --brand: #1d4ed8;
+        }
+
+        html { font-size: 16px; }
+        body { margin: 0; }
+
+        .site-header {
+            border-bottom: 1px solid var(--border);
+            background: #fff;
+        }
+
+        .site-header .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+
+        .logo {
+            font-weight: 800;
+            font-size: 2rem;
+            color: #0f172a;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        .main-nav ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-nav li { display: flex; align-items: center; }
+        .main-nav a {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 8px;
+            text-decoration: none;
+            color: var(--nav-text);
+            font-weight: 500;
+            letter-spacing: .015em;
+            white-space: nowrap;
+        }
+
+        .caret { width: 24px; height: 24px; display: inline-block; }
+        .caret path { fill: var(--nav-text); }
+
+        .actions { display: flex; align-items: center; gap: 16px; }
+        .actions .login {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 12px 8px;
+            display: inline-block;
+        }
+        .actions .cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--brand);
+            color: #fff;
+            font-weight: 600;
+            border-radius: 8px;
+            padding: 12px 16px;
+            text-decoration: none;
+        }
+        .actions .cta .arrow { width: 24px; height: 24px; display: inline-block; }
+        .actions .cta .arrow path { fill: #fff; }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="#" class="logo">magnifico</a>
+
+            <nav class="main-nav" aria-label="Primary">
+                <ul>
+                    <li class="has-caret">
+                        <a href="#">Products
+                            <span class="caret" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" width="24" height="24">
+                                    <path d="M12.071 13.314L17.021 8.364C17.113 8.268 17.224 8.192 17.346 8.14C17.468 8.087 17.599 8.06 17.732 8.059C17.864 8.058 17.996 8.083 18.119 8.133C18.242 8.183 18.353 8.258 18.447 8.352C18.541 8.446 18.616 8.557 18.666 8.68C18.716 8.803 18.741 8.935 18.74 9.067C18.739 9.2 18.712 9.331 18.659 9.453C18.607 9.575 18.531 9.686 18.435 9.778L12.778 15.435C12.591 15.623 12.336 15.728 12.071 15.728C11.806 15.728 11.552 15.622 11.364 15.435L5.707 9.778C5.611 9.686 5.535 9.575 5.483 9.453C5.43 9.331 5.403 9.2 5.402 9.067C5.401 8.935 5.426 8.803 5.476 8.68C5.526 8.557 5.601 8.446 5.695 8.352C5.789 8.258 5.9 8.183 6.023 8.133C6.146 8.083 6.278 8.058 6.41 8.059C6.543 8.06 6.674 8.087 6.796 8.14C6.918 8.192 7.029 8.268 7.121 8.364L12.071 13.314Z"></path>
+                                </svg>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="has-caret">
+                        <a href="#">Solutions
+                            <span class="caret" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" width="24" height="24">
+                                    <path d="M12.071 13.314L17.021 8.364C17.113 8.268 17.224 8.192 17.346 8.14C17.468 8.087 17.599 8.06 17.732 8.059C17.864 8.058 17.996 8.083 18.119 8.133C18.242 8.183 18.353 8.258 18.447 8.352C18.541 8.446 18.616 8.557 18.666 8.68C18.716 8.803 18.741 8.935 18.74 9.067C18.739 9.2 18.712 9.331 18.659 9.453C18.607 9.575 18.531 9.686 18.435 9.778L12.778 15.435C12.591 15.623 12.336 15.728 12.071 15.728C11.806 15.728 11.552 15.622 11.364 15.435L5.707 9.778C5.611 9.686 5.535 9.575 5.483 9.453C5.43 9.331 5.403 9.2 5.402 9.067C5.401 8.935 5.426 8.803 5.476 8.68C5.526 8.557 5.601 8.446 5.695 8.352C5.789 8.258 5.9 8.183 6.023 8.133C6.146 8.083 6.278 8.058 6.41 8.059C6.543 8.06 6.674 8.087 6.796 8.14C6.918 8.192 7.029 8.268 7.121 8.364L12.071 13.314Z"></path>
+                                </svg>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="has-caret">
+                        <a href="#">Services
+                            <span class="caret" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" width="24" height="24">
+                                    <path d="M12.071 13.314L17.021 8.364C17.113 8.268 17.224 8.192 17.346 8.14C17.468 8.087 17.599 8.06 17.732 8.059C17.864 8.058 17.996 8.083 18.119 8.133C18.242 8.183 18.353 8.258 18.447 8.352C18.541 8.446 18.616 8.557 18.666 8.68C18.716 8.803 18.741 8.935 18.74 9.067C18.739 9.2 18.712 9.331 18.659 9.453C18.607 9.575 18.531 9.686 18.435 9.778L12.778 15.435C12.591 15.623 12.336 15.728 12.071 15.728C11.806 15.728 11.552 15.622 11.364 15.435L5.707 9.778C5.611 9.686 5.535 9.575 5.483 9.453C5.43 9.331 5.403 9.2 5.402 9.067C5.401 8.935 5.426 8.803 5.476 8.68C5.526 8.557 5.601 8.446 5.695 8.352C5.789 8.258 5.9 8.183 6.023 8.133C6.146 8.083 6.278 8.058 6.41 8.059C6.543 8.06 6.674 8.087 6.796 8.14C6.918 8.192 7.029 8.268 7.121 8.364L12.071 13.314Z"></path>
+                                </svg>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Pricing</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="actions">
+                <a class="login" href="#">Log In</a>
+                <a class="cta" href="#">
+                    <span>Sign Up Free</span>
+                    <span class="arrow" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M15.586 10.657L11.636 6.707C11.454 6.518 11.353 6.266 11.355 6.004C11.358 5.741 11.463 5.491 11.648 5.305C11.834 5.12 12.084 5.015 12.347 5.012C12.609 5.01 12.861 5.111 13.05 5.293L18.707 10.95C18.8 11.043 18.874 11.153 18.925 11.274C18.975 11.396 19.001 11.526 19.001 11.657C19.001 11.788 18.975 11.919 18.925 12.04C18.874 12.161 18.8 12.271 18.707 12.364L13.05 18.021C12.958 18.117 12.847 18.193 12.725 18.245C12.603 18.298 12.472 18.325 12.339 18.326C12.207 18.327 12.075 18.302 11.952 18.252C11.829 18.201 11.718 18.127 11.624 18.033C11.53 17.94 11.456 17.828 11.405 17.705C11.355 17.582 11.33 17.45 11.331 17.318C11.332 17.185 11.359 17.054 11.412 16.932C11.464 16.81 11.541 16.699 11.636 16.607L15.586 12.657H6C5.735 12.657 5.48 12.552 5.293 12.364C5.105 12.177 5 11.922 5 11.657C5 11.392 5.105 11.137 5.293 10.95C5.48 10.762 5.735 10.657 6 10.657H15.586Z"></path>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
